@@ -1,0 +1,160 @@
+
+<!doctype html>
+<html>
+<head>
+       <title>MATHAPP</title>
+	  <meta charset="utf-8" />
+	   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	   <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <meta name="author" content="Shivam Kumar" />
+       <link rel="shortcut icon" href="Calculator-icon.png"> 
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+
+</head>
+
+
+
+<body>
+<div id="link-directing">
+   <div id="left-link" style="float-left; margin-left: 25px">
+       <h4 style="float:left"><a href="Ass-P2/index.html">Part2</a></h4>
+   </div>
+   <div id="right-link" style="float-right; margin-right: 25px">
+       <h4 style="float:right"><a href="Ass-P3/index.html">Part3</a></h4>
+   </div>
+</div>
+
+<div class="get-textcenter" >
+      <h1>Calculator</h1>
+</div>
+
+<!-- =========================== Lefttop of webpage =========================== -->
+
+<div id="integers-container" class="box-flow">
+      <!-- ======================= Integer entry ========================= -->
+
+   <div id="integers" class="animated bounceInLeft">
+	  <p style="text-align: center">Enter Any Two Number</p>
+      <form >
+         <div class="question">
+            <input id="val1" type="number" required/>
+            <label>NumberA</label>
+        </div>
+        <div class="question" id="question-bottom1">
+            <input id="val2" type="number" required/>
+            <label>NumberB</label>
+        </div>
+      </form>
+   </div><br />	
+
+         <!-- =========================== Swap row ===================== -->
+
+  <div class="swapmaster" id="swapd" class="animated2 bounceInLeft2">
+	   <p style="text-align: center">Swap The Row</p>
+	   <form>
+	       <div class="question">
+	          <input id="row1" type="number" required/>
+	          <label>RowA</label>
+	       </div>
+           <div class="question" id="question-bottom2">
+	          <input id="row2" type="number" required/>
+	          <label>RowB</label>
+	       </div>
+	  </form><br /><br />
+	  <div style="text-align:center">
+	       <input type="button" id="but2" value="SWAP"  class="button button1"/>
+	  </div>
+   </div>
+</div>
+
+<!-- ================================== Working with Operators ============================ -->
+
+<div id="operators-container" class="box-flow" >
+	<div id="oper" class="animated bounceInRight" >
+				
+		<ul>
+			    <p>Use Operator to get the result</p>
+			<li>
+	            <input type="radio" id="add" class="radio" name="operations" /> 
+	            <label for="add">ADDITION</label>
+	            <div class="check"></div>
+	        </li>
+			<li>
+			    <input type="radio" id="subtract" class="radio" name="operations" /> 
+			    <label for="subtract">SUBTRACTION</label>
+			    <div class="check"><div class="inside"></div></div>
+			</li>
+			<li>
+			    <input type="radio" id="multiply" class="radio" name="operations" /> 
+			    <label for="multiply">MULTIPLICATION</label>
+			    <div class="check"><div class="inside"></div></div>
+			</li>
+			<li>
+			    <input type="radio" id="divide" class="radio" name="operations" />
+			    <label for="divide">DIVISION</label>
+			    <div class="check"><div class="inside"></div></div>
+			</li>
+			<li>
+			    <input type="radio" id="lcm" class="radio" name="operations" />
+			    <label for="lcm">LCM</label>
+			    <div class="check">
+			    <div class="inside"></div></div>
+			</li>
+			<li>
+			    <input type="radio" id="hcf" class="radio" name="operations" />
+			    <label for="hcf">HCF</label><div class="check">
+			    <div class="inside"></div></div>
+			</li>
+		</ul> <br /><br /><br />
+		<div style="text-align: center">
+	        <input type="button" id="but1" value="Calculate" class="button button1"/>
+	    </div>
+	</div>
+
+</div>
+
+
+<!-- ========================= Panel ================================ -->
+
+<div id="flip" style="background-color: #FFF; color: black;float:none;">Click on the text to slide the History panel down or up</div>
+
+
+<div id="panel">
+  <table id="myTableData"  align="center" width="100%">
+    <tr>
+       
+		<td class="srno">S.NO</td>
+        <td class="common">INTEGER 1</td>
+        <td class="common">INTEGER 2</td>
+		<td class="common">OPERATOR</td>
+		<td class="common">RESULT</td>
+		<td class="common">COLOR</td>	
+    </tr>
+  </table>
+</div>
+
+<!-- ============================== real time Result ================================ -->
+
+<div id="realtime-val-container">
+   <div id="realtime-val">
+   	   <h1 id="realtime" style="color: #ff4a56">
+   	   	  Here We Go...
+   	   </h1>
+   </div>
+</div>
+
+	
+	
+		
+	
+				
+	
+<script type="text/javascript" src="custom.js"></script>
+	
+	
+	
+</body>
+</html>

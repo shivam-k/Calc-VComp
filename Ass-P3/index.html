@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+     <title>Rotating 3D Cube and Sphere</title>
+     <meta charset="utf-8" />
+     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <meta name="author" content="Shivam Kumar" />
+     <link rel="shortcut icon" href="3d.jpg"> 
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+
+
+</head>
+
+
+
+<body>
+
+<div id="link-directing">
+   <div id="left-link" style="float-left; margin-left: 25px">
+       <h4 style="float:left"><a href="../index.html">Part1</a></h4>
+   </div>
+   <div id="right-link" style="float-right; margin-right: 25px">
+       <h4 style="float:right"><a href="../Ass-P2/index.html">Part2</a></h4>
+   </div>
+</div>
+
+<!-- ========================== Cube Container ================================ -->
+<div class="get-textcenter">
+      <h1>Rotating 3D Cube and Sphere</h1>
+</div>
+<div id="query1">
+<div id="cube-container" class="box-flow">
+  <div class="wrap" >
+    <div id="cube">
+        <div class="front"></div>
+        <div class="back"></div>
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+  </div>
+   <div class="get-val">
+      <form>
+           <div class="question">
+              <h3>Time to rotate the Cube on both axis</h3>
+              <input type="number" id="val-cube" required/>
+              <label>time in sec</label>
+           </div>
+      </form>
+         <div style="text-align: center;margin: 25px 0" > 
+               <input type="button" id="rot-cube" value="click" class="button button1"/>
+        </div>
+   </div>
+</div>
+</div>
+
+<!-- ============================== Sphere Container =========================== -->
+<div id="query2">
+<div id="sphere-container" class="box-flow">
+   <div id="earth"></div>
+   <div class="get-val">
+       <form>
+           <div class="question">
+              <h3>Time to rotate the Sphere on both axis</h3>
+              <input type="number" id="val-sphere" required/>
+              <label>time in sec</label>
+            </div>
+        </form>
+          <div style="text-align: center;margin: 25px 0"> 
+               <input type="button" id="rot-sph" value="click" class="button button1"/>
+        </div>
+   </div>
+</div>
+</div>
+
+
+    <script type="text/javascript">
+    
+    //================================== Cube rotation ===========================
+        document.getElementById("rot-cube").onclick=function(){
+            var x = document.getElementById("val-cube").value;
+            var z = 2*x;
+            var y = z + "s";
+            if(x==""){
+                 alert("Please enter the time in second to rotate the cube on both axis");
+            }
+            else {
+                 document.getElementById("cube").style.animation='spin infinite linear';
+                 document.getElementById("cube").style.animationDuration = y;
+            }
+        
+        }
+        // ==================================== Sphere rotation =====================
+       document.getElementById("rot-sph").onclick=function(){
+            var m = document.getElementById("val-sphere").value;
+            var n = 2*m;
+            var p = n + "s";
+            if (m==""){
+                alert("please enter the time in second to rotate the sphere on both axis");
+            }
+           else {
+               document.getElementById("earth").style.animation='rotate infinite linear';
+               document.getElementById("earth").style.animationDuration = p;
+            }
+        }
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,489 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+body {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+#link-directing a{
+  color: #555555;
+  text-decoration:none;
+}
+#link-directing a:hover {
+  color: #ff4a56;
+}
+.get-textcenter {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 10px 0 30px 0px;
+  
+}
+.get-textcenter h1 {
+  display: table;
+  margin: 0 auto;
+  text-align: center; 
+  padding: 0px 60px 20px 60px; 
+  border-bottom: 2px solid #ff4a56; 
+}
+#integers-container {
+	max-width: 100%;
+	width: 40%;
+	height: 100%;
+	margin-right: 2%;
+	margin-left: 7%;
+}
+#integers {
+	 display: table;
+   margin: 0 auto;
+   padding: 10px 15px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+#swapd {
+	display: table;
+  margin: 5px auto 0 auto;
+  padding: 10px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+#operators-container {
+	max-width: 100%;
+	width: 40%;
+	height: auto;
+	margin-left: 2%;
+	margin-right: 7%;
+  margin-bottom: 25px;
+}
+#oper {
+	 display: table;
+     margin: 0 auto;
+     max-width: 100%;
+     width: 60%;
+     padding: 10px 15px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.box-flow {
+	float: left;
+}
+/* ========================= animated leftbouncein integers =========================== */
+#integers-container .animated {
+          
+            -webkit-animation-duration: 2s; 
+            animation-duration: 2s; 
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; 
+         }
+         
+         @-webkit-keyframes bounceInLeft {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateX(-2000px);
+            }
+            60% {
+               opacity: 1;
+               -webkit-transform: translateX(30px);
+            }
+            80% {
+               -webkit-transform: translateX(-10px);
+            }
+            100% {
+               -webkit-transform: translateX(0);
+            }
+         }
+         
+         @keyframes bounceInLeft {
+            0% {
+               opacity: 0;
+               transform: translateX(-2000px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateX(30px);
+            }
+            80% {
+               transform: translateX(-10px);
+            }
+            100% {
+               transform: translateX(0);
+            }
+         }
+         
+         .bounceInLeft {
+            -webkit-animation-name: bounceInLeft;
+            animation-name: bounceInLeft;
+         }
+
+/* ======================= animated leftbouncein swap ================================= */
+
+ .animated2 {
+            
+            -webkit-animation-duration: 1s; 
+            animation-duration: 1s; 
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; 
+         }
+         
+         @-webkit-keyframes bounceInLeft2 {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateX(-2000px);
+            }
+            60% {
+               opacity: 1;
+               -webkit-transform: translateX(60px);
+            }
+            80% {
+               -webkit-transform: translateX(-10px);
+            }
+            100% {
+               -webkit-transform: translateX(20);
+            }
+         }
+         
+         @keyframes bounceInLeft2 {
+            0% {
+               opacity: 0;
+               transform: translateX(-2000px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateX(60px);
+            }
+            80% {
+               transform: translateX(-10px);
+            }
+            100% {
+               transform: translateX(20);
+            }
+         }
+         
+         .bounceInLeft2 {
+            -webkit-animation-name: bounceInLeft2;
+            animation-name: bounceInLeft2;
+         }
+/* ======================= animated rightbouncein operators =========================== */
+#operators-container .animated {      
+     
+     -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+     animation-delay: 1s;
+    -webkit-animation-duration: 2s;
+     animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+     animation-fill-mode: both;
+}
+@-webkit-keyframes bounceInRight {
+     0% {
+          opacity: 0;
+          -webkit-transform: translateX(2000px);
+      }
+    60% {
+          opacity: 1;
+          -webkit-transform: translateX(-30px);
+         }
+     80% {
+          -webkit-transform: translateX(10px);
+        }
+    100% {
+          -webkit-transform: translateX(0);
+        }
+ }
+         
+@keyframes bounceInRight {
+      0% {
+           opacity: 0;
+           transform: translateX(2000px);
+          }
+      60% {
+           opacity: 1;
+           transform: translateX(-30px);
+        }
+        80% {
+           transform: translateX(10px);
+        }
+      100% {
+             transform: translateX(0);
+      }
+}
+         
+.bounceInRight {
+   -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+}
+    
+
+/* ============================ radio =========================== */
+
+li {
+	clear: both;
+	list-style-type:none;
+}
+
+#oper li label {
+  width: 75%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4
+}
+
+/* hide input */
+input.radio:empty {
+	margin-left: -999px;
+	list-style-type:none;
+	opacity: 0.01;
+}
+
+/* style label */
+input.radio:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 2.5em;
+	text-indent: 3.25em;
+	margin-top: 2em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #ff4a56;
+
+}
+
+input.radio:hover:not(:checked) ~ label {
+	color: #888;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #FFF;
+	background-color: #ff4a56;
+}
+
+input.radio:checked ~ label {
+	color: #ff4a56;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* radio focus */
+input.radio:focus ~ label:before {
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* ============================ Styling num input ===================== */
+
+.transition, form button, form .question label, form .question input[type="text"] {
+  -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+}
+
+
+form {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 30px 25px;
+  background-color: white;
+  border-radius: 40px;
+  left: 50%;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+form .question {
+  position: relative;
+}
+form #question-bottom1, #question-bottom2 {
+  margin-top: 30px;
+}
+form .question:first-of-type {
+  padding-top: 0;
+}
+form .question:last-of-type {
+  padding-bottom: 0;
+}
+form .question label {
+  transform-origin: left center;
+  color: #ff4a56;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  font-size: 17px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  display: block;
+  position: absolute;
+  margin-top: -40px;
+  z-index: 2;
+  pointer-events: none;
+}
+form .question input[type="number"] {
+  appearance: none;
+  background-color: none;
+  border: 1px solid #ff4a56;
+  line-height: 0;
+  font-size: 17px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 60px;
+  color: #ff4a56;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+form .question input[type="number"]:focus {
+  outline: none;
+  background: #ff4a56;
+  color: white;
+  
+}
+form .question input[type="number"]:valid {
+  margin-top: 0px;
+}
+form .question input[type="number"]:focus ~ label {
+  -moz-transform: translate(0, -35px);
+  -ms-transform: translate(0, -35px);
+  -webkit-transform: translate(0, -35px);
+  transform: translate(0, -35px);
+}
+form .question input[type="number"]:valid ~ label {
+  text-transform: uppercase;
+  font-style: italic;
+  color: black;
+  -moz-transform: translate(5px, -35px) scale(0.8);
+  -ms-transform: translate(5px, -35px) scale(0.8);
+  -webkit-transform: translate(5px, -35px) scale(0.8);
+  transform: translate(5px, -35px) scale(0.8);
+}
+
+
+
+/* ===================== btn ================== */
+.button {
+    border: none;
+    color: white;
+    padding: 5% 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px 20px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #ff4a56;
+}
+
+.button1:hover {
+    background-color: #ff4a56;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* =============================== media query for integer and swap ============== */
+
+
+  
+
+
+
+/* ==================== media query for operators ========================== */
+@media only screen and (max-width: 1216px) {
+     #oper li label {
+          width: 100%;
+    }
+}
+
+@media only screen and (max-width: 533px) {
+      input.radio:empty ~ label:before {
+           width: 2.0em;
+      }
+      input.radio:empty ~ label {
+          text-indent: 2.5em;
+      }
+      form {
+        padding: 30px 0px;
+      }
+      #integers-container {
+         margin-left: 2%;
+      }
+      #panel, #flip {
+            padding: 5px 0 5px 0;
+      }
+}
+
+/* ========================= real time value =============================== */
+#realtime-val-container {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+}
+#realtime-val {
+   display: table;
+   margin: 0 auto;
+   padding: 20px 35px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ================================ table ========================= */
+#panel, #flip {
+  max-width: 100%;
+  width: 100%;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    border: solid 0.1px rgba(0,0,0,0.01);
+}
+
+#panel {
+  max-width: 100%;
+  width: 100%;
+    padding: 20px 5px;
+    display: none;
+}
+table#myTableData tr:nth-child(even) {
+    background-color: #FFF;
+    color: black;
+}
+table#myTableData tr:nth-child(odd) {
+   background-color: #ff4a56;
+   color: white;
+}
+table#myTableData th {
+    background-color: black;
+    color: white;
+}

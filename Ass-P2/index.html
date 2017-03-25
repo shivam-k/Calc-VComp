@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Volume Calculation and Comparision</title>
+      <meta charset="utf-8" />
+	    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="author" content="Shivam Kumar" />
+      <link rel="shortcut icon" href="vol.jpg"> 
+
+	    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+
+<div id="link-directing">
+   <div id="left-link" style="float-left; margin-left: 25px">
+       <h4 style="float:left"><a href="../index.html">Part1</a></h4>
+   </div>
+   <div id="right-link" style="float-right; margin-right: 25px">
+       <h4 style="float:right"><a href="../Ass-P3/index.html">Part3</a></h4>
+   </div>
+</div>
+
+
+<div class="get-textcenter">
+      <h1>Volume Calculation and Comparision</h1>
+</div>
+
+<div>
+
+<!-- ============================= left side cube corner ======================== -->
+
+  <div class="cuba" id="cube-container"  style="float:left">
+    <div id="cube-val" class="animated bounceInLeft">
+        <form>
+	       <div class="question">
+	          <input id="side" type="number" required/>
+	          <label>Side of the CUBE</label>
+	       </div>
+        </form>
+
+        <div style="text-align: center"> 
+               <input type="button" id="cal-cube" value="vol of Cube" class="button button1"/>
+        </div>
+        <div style="text-align: center;  color: #ff4a56">
+              <span id="vol-cube"></span>
+        </div>
+    </div>
+  </div>
+
+<!-- ================== right side sphere corner ============================= -->
+
+  <div class="sphera" id="sphere-container"  style="float: left">
+     <div id="sphere-val" class="animated bounceInRight">
+        <form>
+	       <div class="question">
+	          <input id="radius" type="number" required/>
+	          <label>Radius of the SPHERE</label>
+	       </div>
+        </form>
+          <div style="text-align: center"> 
+                <input type="button" id="cal-sphere" value="vol of Sphere" class="button button1"/>
+          </div>
+
+          <div style="text-align: center;  color: #ff4a56">
+               <span id="vol-sphere"></span>
+          </div>
+     </div>
+  </div>
+</div>
+	
+<!-- ================================ bottom side compare and compute ========================== -->
+
+<hr />
+<div class="butter" id="cal-comp" style="float:none">
+      <div id="cal-comp-center" style="float:none" class="animated bounceInUp">
+           <input type="button" id="calculate" value="Calculate and Compare" class="button button1"/>
+           <div class="volsph" style="text-align: center; color: #ff4a56"> 
+                 <span id="vofsphere"></span>
+            </div>
+           <div class="volcub" style="text-align: center; color: #ff4a56"> 
+                 <span id="vofcube"></span>
+           </div>
+      </div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
