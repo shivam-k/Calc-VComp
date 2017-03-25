@@ -1,6 +1,6 @@
 ## Calc-VComp
 
-Basic useful feature list are as such:
+Basic useful feature-list are as such:
 
 * Basic math calculator with utmost dynamic features and dynamic interface. Along with all, swapping of numbers can also be done. 
 * Volume of cube and sphere can be calculated and can also be compared with each other at the same time.
